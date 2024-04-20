@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 1.6rem;
+    background-color: rgb(74, 155, 208);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+#principal {
+    background-color: azure;
+    padding: 1.5rem 2rem;
+    min-height: 50rem;
+    min-width: 40rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem;
+    border-radius: 2rem;
+}
+
+.informacoes {
+    display: flex;
+    gap: 5rem;
+}
+
+.informacoes ul {
+    list-style: none;
+}
+
+.informacoes h2 {
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+form > input {
+    padding: 0.5rem 1rem;
+}
+
+form > input::placeholder{
+    color: rgb(154, 151, 151);
+}
+
+form > button {
+    padding: 0.5rem 1rem;
+    background-color: rgb(74, 155, 208);
+    color: white;
+    margin-top: 1.5rem;
+}
+
+.paragrafo-resultado, .bad {
+    background-color: rgb(105, 251, 141);
+    padding: 1rem 2rem;
+}
+
+.bad {
+    background-color: rgb(255, 47, 0);
+}
