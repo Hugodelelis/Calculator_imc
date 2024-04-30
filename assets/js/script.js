@@ -6,7 +6,9 @@ form.addEventListener('submit', function(e) {
     const inputAltura = e.target.querySelector('#altura')
 
     const peso = Number(inputPeso.value)
-    const altura = Number(inputAltura.value)
+    let altura = inputAltura.value
+    altura = altura.replace(',', '.')
+    Number(altura)
 
     if (!peso && !altura) {
         setResultado('Peso e altura inválidos!', false)
